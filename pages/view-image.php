@@ -4,48 +4,47 @@ include_once '../BE/header.php';
 
 
 <main id="main">
-
     <section class="breadcrumbs">
     <div class="container" data-aos="fade-up" style="padding-top:4.5vw">
         <div class="section-title">
           <h2 style="color: #cda45e;font-size: 4.5vw;">Gallery</h2>
-          <p style="color:white">Photos From Our Artists</p>
+          <p style="color:white;margin-left:85px">A Closer Look</p>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="gallery">
-      <div class="container">
+    <section class="closer-look">
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="hover-btn" style= "display:flex;border:3px solid #cda45e;border-radius:6px;margin-bottom:7px;max-width: 60px;align-items: baseline;">
-      <i class="fa-solid fa-plus"style="display:inline-block;padding-left:3px;color: #cda45e"></i>
-      <a href="add-image.php" style="display:inline-block;padding-top:6px;padding-right:6px;padding-bottom:6px,padding-left:3px;font-weight:900;color:white">ADD</a>
-      </div>
-
-      <div class="row g-0">
-
-      <?php for ($i = 0; $i <= 12; $i++){?>
-  <div class="col-lg-3 col-md-4">
-    <div class="gallery-item">
-      <a href="../assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-        <img src="../assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-      </a>
+    
+    <div style="border:4px solid #cda45e;display:flex">
+    
+    <div id="display-img" style="width:45%;background-position:center;background-size:cover;display:inline-block">
+    <img src="../assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
     </div>
-  </div>
-<?php }?>
 
-      </div>
-      </div>
-      </div>
+    <div id="details" style="margin-left:8px">
+    <div class="img-creator" style="display:flex;margin-bottom:15px;height:10%;align-items: baseline;margin-top:5px">
+        <label for="creator" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Creator:</label>
+        <text style="background-color:#817b7b;color:black;border-radius:5px;padding:3px">CSchJW27</text>
+        </div>
+        <div class="img-pdate" style="display:flex;margin-bottom:15px;height:10%;align-items: baseline;">
+        <label for="pdate" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Publish Date:</label>
+        <text style="background-color:#817b7b;color:black;border-radius:5px;padding:3px"><?php echo date('Y-m-d'); ?></text>
+        </div>
+        <i class="fa-regular fa-thumbs-up fa-xl" style="color:green"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px">168</text></i>
+        <i class="fa-regular fa-thumbs-down fa-xl" style="color:red"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px">25</text></i>
+        <div class="comments" style="display:flex;margin-bottom:15px;height:10%;margin-top:15px">
+        <label for="comments" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Comments:</label>
+        <!-- comment system goes here -->
+        </div>
+
+    </div>
+
+
     </section>
 
- 
 
-  </main><!-- End #main -->
-
-   <!-- ======= Footer ======= -->
+      <!-- ======= Footer ======= -->
    <footer id="footer">
     <div class="footer-top">
       <div class="container">

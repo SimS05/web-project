@@ -665,7 +665,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #827e7e;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1338,6 +1338,7 @@ section {
 
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
+  object-fit: cover;
 }
 
 .gallery .gallery-item:hover img {
@@ -1730,4 +1731,16 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+.form-content{
+  display:inline-grid;
+}
+
+#display-img{
+  width:375px;
+  height:211px;
+  border:1px solid black;
+  background-position:center;
+  background-size:cover
 }
