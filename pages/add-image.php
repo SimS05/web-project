@@ -24,7 +24,7 @@ include_once '../BE/header.php';
                         <label for="text-input" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:2.5vw;">Description:<span style="color:red">*</span></label>
                             <div class="img-creator" style="display:flex;margin-bottom:15px;">
                                 <label for="creator" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:15px;margin-right:10px;">Creator:<span style="color:red">*</span></label>
-                                <input type="text" value="CSchJW27" style="background-color:#817b7b;" name="creator" id="creator">
+                                <input type="text" value="<?php echo $_SESSION["username"]?>" style="background-color:#817b7b;" name="creator" id="creator">
                             </div>
                             <div class="img-pdate" style="display:flex;margin-bottom:15px;">
                                 <label for="pdate" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:15px;margin-right:10px;">Publish Date:<span style="color:red">*</span></label>

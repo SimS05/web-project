@@ -18,6 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user-> eLevel=$_POST["expertiseLevel"];
 
        if(signUp($user)){
+        session_start();
+        $_SESSION["username"]=$user->username;
+        $_SESSION["email"]=$user->email;
         echo '<script language="javascript">';
         echo 'alert("Login Successful!");';
         echo 'window.location.href ="../pages/indexx.php";';
@@ -40,10 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user->pass=$_POST["pass"];
 
         if(login($user)){
-        echo '<script language="javascript">';
-        echo 'alert("Login Successful!");';
-        echo 'window.location.href ="../pages/indexx.php";';
-        echo '</script>';
+            session_start();
+            $_SESSION["username"]=$user->username;
+            $_SESSION["email"]=$user->email;
+             echo '<script language="javascript">';
+             echo 'alert("Login Successful!");';
+            echo 'window.location.href ="../pages/indexx.php";';
+            echo '</script>';
         exit;
         }
         else{
