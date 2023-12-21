@@ -2,6 +2,7 @@
 
 require_once 'signup-login.php';
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if(isset($_POST["signup"])){
@@ -44,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if(login($user)){
             session_start();
-            $_SESSION["username"]=$user->username;
+            $_SESSION["username"]=getUsername($user);
             $_SESSION["email"]=$user->email;
              echo '<script language="javascript">';
              echo 'alert("Login Successful!");';

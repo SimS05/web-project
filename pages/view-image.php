@@ -1,5 +1,10 @@
 <?php 
-include_once '../BE/header.php';
+require_once '../BE/header.php';
+require_once '../BE/image.php';
+if (isset($_GET['post-id'])) {
+  $post_id= $_GET['post-id'];
+  $path=getImgfromId($post_id);
+}
 ?>
 
 
@@ -16,10 +21,10 @@ include_once '../BE/header.php';
     <section class="closer-look">
 
     
-    <div style="border:4px solid #cda45e;display:flex">
+    <div style="border:4px solid #cda45e;display:flex;height:511px">
     
-    <div id="display-img" style="width:45%;background-position:center;background-size:cover;display:inline-block">
-    <img src="../assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+    <div id="display-img" style="width:45%;display:inline-block">
+    <img src="<?php echo $path; ?>" alt="" class="img-fluid" style="object-fit:cover">
     </div>
 
     <div id="details" style="margin-left:8px">

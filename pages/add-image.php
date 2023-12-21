@@ -11,13 +11,13 @@ include_once '../BE/header.php';
             </div>
 
             <div style="border:2px solid white;padding:6px">
-                <form>
+                <form action="../BE/image-contr.php" name="add-Img" method="POST" enctype="multipart/form-data">
                     <div class="form-content" style="display:flex;flex-wrap:wrap">
 
                         <div class="image-input" style="width:45%;margin-right:50px">
-                            <label for="img-upload" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:2.5vw">Image:<span style="color:red">*</span></label>
+                            <label for="imgupload" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:2.5vw">Image:<span style="color:red">*</span></label>
                             <div id="display-img" style="width:100%;height:411px;border:1px solid black;background-position:center;background-size:cover;margin-bottom:10px;"></div>
-                            <input type="file" name="img-upload" id="image-upload" accept="image/png, image/jpg">
+                            <input type="file" name="imgupload" id="imageupload" accept="image/png, image/jpg" required>
                         </div>
 
                         <div class="text-input" style="width:45%;">
@@ -31,12 +31,13 @@ include_once '../BE/header.php';
                                 <input type="date" value="<?php echo date('Y-m-d'); ?>" style="background-color:#817b7b;" name="pdate" id="pdate">
                             </div>
                             <div class="img-desc">
-                                <textarea name="desc" id="desc" rows="10" cols="50" style="background-color:#817b7b;width:100%; color:red" placeholder="Write a bit about your piece!"></textarea>
+                                <textarea name="desc" id="desc" rows="10" cols="50" style="background-color:#817b7b;width:100%; color: #cda45e;" placeholder="Write a bit about your piece!" required></textarea>
                             </div>
-                            <a href="add-image.php" style="border:3px solid #cda45e; border-radius:6px; width:75px; text-align:center; display:block;margin-top:5px;margin-left:420px">
-                                <i class="fa-solid fa-plus" style="color: #cda45e;"></i>
-                                <span style="color: #cda45e;">ADD</span>
-                            </a>
+                            
+                            <input type="submit" name="addImg" value="ADD" style="border:3px solid #cda45e; border-radius:6px; width:75px; text-align:center; display:block;margin-top:5px;margin-left:420px;color: #cda45e;">
+                                
+                                
+                            
                         </div>
 
                     </div>
@@ -47,7 +48,7 @@ include_once '../BE/header.php';
     </section>
 </main>
 <script>
-  const image_upload = document.querySelector("#image-upload");
+  const image_upload = document.querySelector("#imageupload");
   var uploaded_img = "";
   const reader = new FileReader();
 
@@ -55,7 +56,7 @@ include_once '../BE/header.php';
     reader.addEventListener("load", () => {
       uploaded_img = reader.result;
       console.log(uploaded_img); 
-      document.querySelector("#display-img").style.backgroundImage = `url(${uploaded_img})`; // Use backticks for string interpolation
+      document.querySelector("#display-img").style.backgroundImage = `url(${uploaded_img})`; 
     });
     reader.readAsDataURL(this.files[0]);
   });
