@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Move uploaded file to the target location
             if (move_uploaded_file($_FILES["imgupload"]["tmp_name"], $targetFile)) {
-                $post->img = $targetFile; // Set the image path in $post->img
+                $post->img = $targetFile; 
             }
         }
 
