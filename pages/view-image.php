@@ -1,9 +1,9 @@
 <?php 
 require_once '../BE/header.php';
 require_once '../BE/image.php';
-if (isset($_GET['post-id'])) {
-  $post_id= $_GET['post-id'];
-  $path=getImgfromId($post_id);
+if (isset($_GET['post_id'])) {
+  $post_id= $_GET['post_id'];
+  $post=getPost($post_id);
 }
 ?>
 
@@ -23,17 +23,17 @@ if (isset($_GET['post-id'])) {
     <section class="closer-look">
     <div style="border:4px solid #cda45e;display:flex;height:511px;">
       <div id="display-img" style="width:45%;display:inline-block;height:100%;overflow:hidden;">
-        <img src="<?php echo $path;?>" alt="" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+        <img src="<?php echo $post->img;?>" alt="" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
       </div>
 
       <div id="details" style="margin-left:8px;">
     <div class="img-creator" style="display:flex;margin-bottom:15px;height:10%;align-items: baseline;margin-top:5px">
         <label for="creator" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Creator:</label>
-        <text style="background-color:#817b7b;color:black;border-radius:5px;padding:3px">CSchJW27</text>
+        <text style="background-color:#817b7b;color:black;border-radius:5px;padding:3px"><?php echo $post->uemail?></text>
         </div>
         <div class="img-pdate" style="display:flex;margin-bottom:15px;height:10%;align-items: baseline;">
         <label for="pdate" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Publish Date:</label>
-        <text style="background-color:#817b7b;color:black;border-radius:5px;padding:3px"><?php echo date('Y-m-d'); ?></text>
+        <text style="background-color:#817b7b;color:black;border-radius:5px;padding:3px"><?php echo $post->pdate; ?></text>
         </div>
         <i class="fa-regular fa-thumbs-up fa-xl" style="color:green"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px">168</text></i>
         <i class="fa-regular fa-thumbs-down fa-xl" style="color:red"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px">25</text></i>

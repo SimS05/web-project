@@ -1,7 +1,8 @@
 <?php 
-include_once '../BE/header.php';
+require_once '../BE/header.php';
+require_once '../BE/image.php';
+$array=getImgIds();
 ?>
-
 
 <main id="main">
 
@@ -26,11 +27,13 @@ include_once '../BE/header.php';
 
       <div class="row g-0">
 
-      <?php for ($i = 0; $i <= 12; $i++){?>
-  <div class="col-lg-3 col-md-4">
+      <?php 
+      for ($i=0;$i<count($array);$i++ ){
+        $post=getPost($array[$i]);?>
+   <div class="col-lg-3 col-md-4">
     <div class="gallery-item">
-      <a href="../assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-        <img src="../assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+      <a href="view-image.php?post_id=<?php echo $post->post_id?>"class="gallery-lightbox" data-gall="gallery-item">
+        <img src=<?php echo $post->img; ?> alt="" class="img-fluid">
       </a>
     </div>
   </div>

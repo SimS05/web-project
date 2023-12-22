@@ -16,18 +16,34 @@ function addPost($post){
     return null;
 }
 
-function getImgfromId($id){
+function getPost($id){
     $db=DBConnect();
-    $stmt=$db->prepare("Select img from post where post_id=:id");
+    $stmt=$db->prepare("SELECT * FROM post WHERE post_id=:id");
     $stmt->bindParam(':id', $id);
     if($stmt->execute()){
         $obj=$stmt->fetch(PDO::FETCH_OBJ);
-        return $obj->img;
+        return $obj;
     }
 
     
     return null;
 }
+
+function getImgIds(){
+    $array=array();
+    $db=DBConnect();
+    $stmt=$db->prepare("SELECT post_id FROM post");
+    if($stmt->execute()){
+        while($obj=$stmt->fetch(PDO::FETCH_OBJ)){
+            $array[]=$obj->post_id;
+        }
+        arsort($array);
+        return $array;
+        
+    } 
+    return null;
+}
+
 
 
 

@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile);
             echo '<script language="javascript">';
             echo 'alert("Post Added!");';
-            echo "window.location.href ='../pages/view-image.php?post-id={$post->id}';";
+            echo "window.location.href ='../pages/view-image.php?post_id={$post->id}';";
             echo '</script>';
             exit;
         }

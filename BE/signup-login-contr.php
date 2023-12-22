@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["email"]=$user->email;
         echo '<script language="javascript">';
         echo 'alert("Login Successful!");';
-        echo 'window.location.href ="../pages/indexx.php";';
+        echo 'window.location.href ="../pages/template-index.php";';
         echo '</script>';
         exit;
        }
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["email"]=$user->email;
              echo '<script language="javascript">';
              echo 'alert("Login Successful!");';
-            echo 'window.location.href ="../pages/indexx.php";';
+            echo 'window.location.href ="../pages/template-index.php";';
             echo '</script>';
         exit;
         }
