@@ -103,7 +103,7 @@ session_start();
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" style="background: url('../assets/img/a.jpg') top center;">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8">
@@ -126,7 +126,7 @@ session_start();
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="background: url('../assets/img/istock.jpg') center center;">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -409,7 +409,7 @@ Unleash your inner sketch artist with this curated set of modern sketching essen
     </section><!-- End Specials Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
+    <section id="events" class="events" style="background: url('../assets/img/ex.jpg') center center no-repeat;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
