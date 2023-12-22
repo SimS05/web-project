@@ -29,7 +29,7 @@ $array=getImgIds();
 
       <?php 
         $array=getImgIds();
-      for ($i=0;$i<8;$i++ ){
+      for ($i=0;$i<count($array);$i++ ){
         $post=getPost($array[$i]);?>
    <div class="col-lg-3 col-md-4">
     <div class="gallery-item">

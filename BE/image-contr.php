@@ -43,6 +43,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
     }
+
+    if (isset($_POST["postId"])) {
+        $postId = $_POST["postId"];
+    
+        
+        $likeAdded = addLike($postId);
+    
+        if ($likeAdded) {
+            echo "<script language='javascript'>";
+            echo "window.location.href ='../pages/view-image.php?post_id={$postId}'";
+            echo "</script>";
+            exit;
+           
+        } else {
+            echo "<script language='javascript'>";
+            echo "window.location.href ='../pages/view-image.php?post_id={$postId}'";
+            echo "</script>";
+            exit;
+        }
+    }
+
+    if (isset($_POST["postId2"])) {
+        $postId = $_POST["postId2"];
+    
+        
+        $dislikeAdded = addDislike($postId);
+    
+        if ($dislikeAdded) {
+            echo "<script language='javascript'>";
+            echo "window.location.href ='../pages/view-image.php?post_id={$postId}'";
+            echo "</script>";
+            exit;
+           
+        } else {
+            echo "<script language='javascript'>";
+            echo "window.location.href ='../pages/view-image.php?post_id={$postId}'";
+            echo "</script>";
+            exit;
+        }
+    }
+    
 }
 
 

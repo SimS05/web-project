@@ -7,7 +7,34 @@ if (isset($_GET['post_id'])) {
 }
 ?>
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  function likePost(postId) {
+    console.log("Icon clicked with postId:", postId);
+    $.ajax({
+        type: "POST",
+        url: "../BE/image-contr.php", 
+        data: { postId: postId },
+        success: function(response) { 
+          window.location.reload();
+        },
+        error: function(xhr, status, error) {
+        }
+    });
+}
+function dislikePost(postId2) {
+    $.ajax({
+        type: "POST",
+        url: "../BE/image-contr.php", 
+        data: { postId2: postId2 },
+        success: function(response) {  
+          window.location.reload();
+        },
+        error: function(xhr, status, error) {
+        }
+    });
+}
+  </script>
 <main id="main">
     <section class="breadcrumbs">
     <div class="container" data-aos="fade-up" style="padding-top:4.5vw">
@@ -35,8 +62,8 @@ if (isset($_GET['post_id'])) {
         <label for="pdate" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Publish Date:</label>
         <text style="background-color:#817b7b;color:black;border-radius:5px;padding:3px"><?php echo $post->pdate; ?></text>
         </div>
-        <i class="fa-regular fa-thumbs-up fa-xl" style="color:green"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px"><?php echo $post->likes?></text></i>
-        <i class="fa-regular fa-thumbs-down fa-xl" style="color:red"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px"><?php echo $post->dislikes?></text></i>
+        <i class="fa-regular fa-thumbs-up fa-xl" style="color:green" onclick="likePost(<?php echo $post->post_id; ?>)"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px"><?php echo $post->likes?></text></i>
+        <i class="fa-regular fa-thumbs-down fa-xl" style="color:red" onclick="dislikePost(<?php echo $post->post_id; ?>)"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px"><?php echo $post->dislikes?></text></i>
         <div class="comments" style="display:flex;margin-bottom:15px;height:10%;margin-top:15px">
         <label for="comments" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Comments:</label>
         <!-- comment system goes here -->
@@ -108,18 +135,6 @@ if (isset($_GET['post_id'])) {
       </div>
     </div>
 
-    <div class="container">
-      <!-- <div class="copyright">
-        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
-      </div>
-    </div> 
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
@@ -139,3 +154,5 @@ if (isset($_GET['post_id'])) {
 </body>
 
 </html>
+
+

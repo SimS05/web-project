@@ -44,6 +44,30 @@ function getImgIds(){
     return null;
 }
 
+function addLike($id){
+    $db = DBConnect();
+    $stmt = $db->prepare("UPDATE post SET `likes` = `likes` + 1 WHERE post_id = :id");
+    $stmt->bindParam(':id', $id);
+    
+    if($stmt->execute()){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function addDislike($id){
+    $db = DBConnect();
+    $stmt = $db->prepare("UPDATE post SET `dislikes` = `dislikes` + 1 WHERE post_id = :id");
+    $stmt->bindParam(':id', $id);
+    
+    if($stmt->execute()){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 
 
