@@ -103,7 +103,7 @@ session_start();
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center" style="background: url('../assets/img/a.jpg') top center;">
+  <section id="hero" class="d-flex align-items-center" style="background: url('../assets/img/a.jpg') top center;background-size: cover;position: relative;padding: 80px 0;">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8">
@@ -126,7 +126,7 @@ session_start();
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about" style="background: url('../assets/img/istock.jpg') center center;">
+    <section id="about" class="about" style="background: url('../assets/img/istock.jpg') center center; background-size: cover;position: relative;padding: 80px 0;">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -409,7 +409,7 @@ Unleash your inner sketch artist with this curated set of modern sketching essen
     </section><!-- End Specials Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events" style="background: url('../assets/img/ex.jpg') center center no-repeat;">
+    <section id="events" class="events" style="background: url('../assets/img/ex.jpg') center center no-repeat;background-size: cover;position: relative;padding: 80px 0;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
