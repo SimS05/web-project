@@ -37,7 +37,7 @@ function getImgIds(){
         while($obj=$stmt->fetch(PDO::FETCH_OBJ)){
             $array[]=$obj->post_id;
         }
-        arsort($array);
+        rsort($array);
         return $array;
         
     } 
@@ -67,6 +67,39 @@ function addDislike($id){
         return false;
     }
 }
+
+function addCmnt($cmnt){
+    $db = DBConnect();
+    $stmt = $db->prepare("INSERT INTO comment(commenter,comment,post_id) VALUES(:cmnter,:cmnt,:pid)");
+    $stmt->bindParam(':cmnter', $cmnt->cmnter);
+    $stmt->bindParam(':cmnt', $cmnt->cmnt);
+    $stmt->bindParam(':pid', $cmnt->pid);
+    
+    if($stmt->execute()){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function retreivecmnt($id){
+    $array=array();
+    $db = DBConnect();
+    $stmt = $db->prepare("SELECT * from comment where post_id=:pid");
+    $stmt->bindParam(':pid', $id);
+    
+    if($stmt->execute()){
+        while($obj=$stmt->fetch(PDO::FETCH_OBJ)){
+            $array[]=$obj;
+        }
+        return $array;
+    } else {
+        return null;
+    }
+}
+
+
+
 
 
 

@@ -1,6 +1,7 @@
 <?php 
 require_once '../BE/header.php';
 require_once '../BE/image.php';
+require_once '../BE/signup-login.php';
 if (isset($_GET['post_id'])) {
   $post_id= $_GET['post_id'];
   $post=getPost($post_id);
@@ -64,47 +65,57 @@ function dislikePost(postId2) {
         </div>
         <i class="fa-regular fa-thumbs-up fa-xl" style="color:green" onclick="likePost(<?php echo $post->post_id; ?>)"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px"><?php echo $post->likes?></text></i>
         <i class="fa-regular fa-thumbs-down fa-xl" style="color:red" onclick="dislikePost(<?php echo $post->post_id; ?>)"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px"><?php echo $post->dislikes?></text></i>
-        <div class="comments" style="display:flex;margin-bottom:15px;height:10%;margin-top:15px">
-        <label for="comments" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Comments:</label>
-       
-        <!-- comment system goes here -->
+      
+      
+      
+        </div>
+    </div>
+    </section>
 
-        <section id="testimonials" class="testimonials section-bg">
+    <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
+
+      
+        <div class="section-title">
+          <h2>Comments</h2>
+          <form action="../BE/image-contr.php" method="POST">
+          <button style="border: none;background-color: transparent;padding: 0;margin: 0;outline: none;" name="addcmnt" type="submit"><i class="fa-solid fa-plus"style="display:inline-block;padding-left:3px;color: #cda45e;border:2px solid #cda45e;border-radius:15px;padding:3px ">ADD</i></button>
+          <input type="text" name="cmnt" style="width:1000px" required>
+          <input type="text" name=cmnter value="<?php echo $_SESSION["email"]?>" hidden>
+          <input type="text" name=pid value="<?php echo $post_id?>" hidden>
+          </form>
+        </div>
+        
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
-           
-              <div class="testimonial-item">
+          <?php $cmnts=retreivecmnt($post_id);
+ 
+            foreach ($cmnts as $comment) {
+          echo "
+            <div class='swiper-slide'>
+              <div class='testimonial-item'>
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      nice
-                    </p>
-                <!-- <img src="assets/img/riiiii.jpeg" class="testimonial-img" alt=""> -->
-                <h3>Saul Goodman</h3>
-                <!-- <h4>Ceo &amp; Founder</h4> -->
+                  <i class='bx bxs-quote-alt-left quote-icon-left'></i>
+                  ";echo $comment->comment;echo "         
+                 </p>
+               
+                <h3>";echo getUsernamebyID($comment->commenter); echo "</h3>
+                
               </div>
-            </div><!-- End testimonial item -->
+            </div>
+            ";}?>
 
-            
+           
 
-         
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
+
       </div>
-    </section>
-
-
-
-
-        
-        <!-- comment system goes here -->
-        </div>
-
-    </div>
-
-
-    </section>
+            </section>
+    
 
 
      <!-- ======= Footer ======= -->

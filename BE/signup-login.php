@@ -62,4 +62,13 @@ function getUsername($user){
     return $obj->username;
 }
 
+function getUsernamebyID($email){
+    $db=DBConnect();
+    $stmt=$db->prepare("SELECT username FROM user WHERE email=:email;");
+    $stmt->bindParam(':email',$email);
+    $stmt->execute();
+    $obj=$stmt->fetch(PDO::FETCH_OBJ);
+    return $obj->username;
+}
+
 ?>

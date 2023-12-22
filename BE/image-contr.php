@@ -83,10 +83,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit;
         }
     }
+
+    if (isset($_POST["cmnt"])) {
+        $cmnt=new stdClass();
+        $cmnt->cmnt=$_POST["cmnt"];
+        $cmnt->cmnter=$_POST["cmnter"];
+        $cmnt->pid=$_POST["pid"];
+    
+        
+      
+    
+        if (addCmnt($cmnt)) {
+            echo "<script language='javascript'>";
+            echo "alert('Comment Added!');";
+            echo "window.location.href ='../pages/view-image.php?post_id={$cmnt->pid}'";
+            echo "</script>";
+            exit;
+           
+        } else {
+            echo "<script language='javascript'>";
+            echo "alert('Could Not Add Comment!');";
+            echo "window.location.href ='../pages/view-image.php?post_id={$cmnt->pid}'";
+            echo "</script>";
+            exit;
+        }
+    }
+
+
     
 }
-
-
-
 
 ?>
