@@ -25,7 +25,7 @@ $(document).ready(function () {
     $(this).addClass("clicked");
 
     setTimeout(function () {
-      window.location.href = "another_page.html"; 
+      window.location.href = "pages/login.php"; 
     }, 500); 
   });
 
@@ -33,7 +33,7 @@ $(document).ready(function () {
     $(this).addClass("clicked");
 
     setTimeout(function () {
-      window.location.href = "login.html"; 
+      window.location.href = "../index.php"; 
     }, 500);
   });
 });
