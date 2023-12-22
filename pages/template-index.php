@@ -55,12 +55,7 @@ session_start();
         <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 2:30PM</span></i>
       </div>
 
-      <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-          <li>En</li>
-          <li><a href="#">De</a></li>
-        </ul>
-      </div>
+     
     </div>
   </div>
 
@@ -116,8 +111,8 @@ session_start();
           <h2>Illuminating Perspectives, Weaving Dreams.</h2>
 
           <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Marketplace</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Schedule A Session</a>
           </div>
         </div>
         <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
