@@ -137,7 +137,7 @@ session_start();
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-              <img src="assets/img/JohanZoffany.jpg" alt="">
+              <img src="../assets/img/JohanZoffany.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
@@ -223,7 +223,7 @@ session_start();
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/book.jpg" class="menu-img" alt="">
+            <img src="../assets/img/book.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Ephemeral Elegance: A Retrospective </a><span>$15.95</span>
             </div>
@@ -233,7 +233,7 @@ session_start();
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/sup.webp" class="menu-img" alt="">
+            <img src="../assets/img/sup.webp" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#"> Set: "Nature's Palette" Acrylic Painting Set</a><span>$26.95</span>
             </div>
@@ -243,7 +243,7 @@ session_start();
           </div>
 
           <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/book.jpg" class="menu-img" alt="">
+            <img src="../assets/img/book.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Metamorphosis in Monochrome </a><span>$37.95</span>
             </div>
@@ -253,7 +253,7 @@ session_start();
           </div>
 
           <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/merch.png" class="menu-img" alt="">
+            <img src="../assets/img/merch.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Design: "Celestial Harmony"</a><span>$9.95</span>
             </div>
@@ -263,7 +263,7 @@ session_start();
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/sup.webp" class="menu-img" alt="">
+            <img src="../assets/img/sup.webp" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#"> Set: "Essence of Color" Watercolor Kit</a><span>$9.95</span>
             </div>
@@ -273,7 +273,7 @@ session_start();
           </div>
 
           <div class="col-lg-6 menu-item filter-starters">
-            <img src="assets/img/book.jpg" class="menu-img" alt="">
+            <img src="../assets/img/book.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#"> Serenity in Seasons </a><span>$24.95</span>
             </div>
@@ -283,7 +283,7 @@ session_start();
           </div>
 
           <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/merch.png" class="menu-img" alt="">
+            <img src="../assets/img/merch.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#"> Design: "Floral Whimsy" Hoodie</a><span>$9.95</span>
             </div>
@@ -293,7 +293,7 @@ session_start();
           </div>
 
           <div class="col-lg-6 menu-item filter-salads">
-            <img src="assets/img/merch.png" class="menu-img" alt="">
+            <img src="../assets/img/merch.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#"> Design: "Urban Serenity" Tote Bag</a><span>$6.95</span>
             </div>
@@ -302,7 +302,7 @@ Carry a touch of urban serenity with this exclusive tote bag featuring a captiva
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
-            <img src="assets/img/sup.webp" class="menu-img" alt="">
+            <img src="../assets/img/sup.webp" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Set: "Modern Sketching Essentials"</a><span>$12.95</span>
             </div>
@@ -354,7 +354,7 @@ Unleash your inner sketch artist with this curated set of modern sketching essen
                     <p class="fst-italic">A mesmerizing blend of vibrant hues and delicate strokes, "Ephemeral Whispers" transports viewers into a world where time stands still. Isabella Cruz captures fleeting moments with grace, inviting you to explore the profound beauty found in the transient dance of color and form</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/Nikolas.jpg" alt="" class="img-fluid">
+                    <img src="../assets/img/Nikolas.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -366,7 +366,7 @@ Unleash your inner sketch artist with this curated set of modern sketching essen
                     <p class="fst-italic">Immerse yourself in the transformative journey depicted in "Metamorphic Echoes" by Malik Thompson. Through the interplay of light and shadow, Thompson's piece reflects the ever-changing nature of existence, inviting contemplation on the cycles of life and growth</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/ok.webp" alt="" class="img-fluid">
+                    <img src="../assets/img/ok.webp" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -378,7 +378,7 @@ Unleash your inner sketch artist with this curated set of modern sketching essen
                     <p class="fst-italic"> "Serenity's Embrace" by Ava Harper is a celebration of nature's serenity. With meticulous detail, Harper captures the essence of a tranquil moment, where the gentle dance of flora invites viewers to find solace and connection with the natural world</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/lay.jpg" alt="" class="img-fluid">
+                    <img src="../assets/img/lay.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -390,7 +390,7 @@ Unleash your inner sketch artist with this curated set of modern sketching essen
                     <!-- <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p> -->
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/unv.jpg" alt="" class="img-fluid">
+                    <img src="../assets/img/unv.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -402,7 +402,7 @@ Unleash your inner sketch artist with this curated set of modern sketching essen
                     <!-- <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p> -->
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/lll.avif" alt="" class="img-fluid">
+                    <img src="../assets/img/lll.avif" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -428,7 +428,7 @@ Unleash your inner sketch artist with this curated set of modern sketching essen
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/Kusama.jpg" class="img-fluid" alt="">
+                  <img src="../assets/img/Kusama.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Chromatic Reverie: A Multisensory Art Experience</h3>
@@ -455,7 +455,7 @@ Location: LuminaLoom Gallery, 157 William St, New York, NY 10038, United States<
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/bas.jpg" class="img-fluid" alt="">
+                  <img src="../assets/img/bas.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Sculptural Symphonies: A Fusion of Form and Sound</h3>
@@ -482,7 +482,7 @@ Location: Harmony Hall, 456 Sculpture Street, Artropolis</span></p>
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/dig.jpg" class="img-fluid" alt="">
+                  <img src="../assets/img/dig.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Digital Dreamscape: Exploring Virtual Realms in Art</h3>
@@ -582,7 +582,7 @@ Location: Virtual Event (Online)</span></p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
 In the ethereal realm of LuminaLoom, my art finds both a canvas and a cosmic conversation. This gallery is a celestial junction where artists transcend the earthly constraints, and the boundaries between the tangible and the sublime blur. It's an exhilarating experience to be part of a space that not only showcases art but orchestrates a symphony of creative energies. LuminaLoom is a testament to the infinite possibilities when art and the cosmos converge in a celestial dance.                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/riiiii.jpeg" class="testimonial-img" alt="">
+                <img src="../assets/img/riiiii.jpeg" class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
@@ -594,7 +594,7 @@ In the ethereal realm of LuminaLoom, my art finds both a canvas and a cosmic con
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
 Being part of LuminaLoom is a collaborative journey into the realms of emotion and introspection. The gallery's avant-garde spirit aligns seamlessly with my exploration of the human psyche. LuminaLoom is more than a showcase; it's a provocateur of thought, a space where my art engages in a dynamic dialogue with the viewer. It's an honor to contribute to a gallery that embraces the transformative potential of contemporary art.                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/rii.jpg" class="testimonial-img" alt="">
+                <img src="../assets/img/rii.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
@@ -606,7 +606,7 @@ Being part of LuminaLoom is a collaborative journey into the realms of emotion a
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
 Exhibiting at LuminaLoom Arts is a symbiotic dance between my nature-inspired creations and the gallery's commitment to celebrating the beauty of the world. LuminaLoom is not just a space; it's a sanctuary where the language of art and nature converges. It's an exhilarating journey to see my works find resonance within the gallery's ethos, connecting with art enthusiasts who share a passion for the awe-inspiring wonders of our environment.                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/ar.jpg" class="testimonial-img" alt="">
+                <img src="../assets/img/ar.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Abstract Artist</h4>
               </div>
@@ -618,7 +618,7 @@ Exhibiting at LuminaLoom Arts is a symbiotic dance between my nature-inspired cr
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
 LuminaLoom is more than a venue; it's a curator of cultural conversations. Having my art featured here is an opportunity to contribute to a narrative that transcends individual expression. The gallery's commitment to promoting inclusivity and dialogue elevates the impact of each piece, creating a dynamic dialogue between the artist, the work, and the diverse audience it attracts.                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/bl.webp" class="testimonial-img" alt="">
+                <img src="../assets/img/bl.webp" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Store Owner</h4>
               </div>
@@ -630,7 +630,7 @@ LuminaLoom is more than a venue; it's a curator of cultural conversations. Havin
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
 Being part of LuminaLoom Gallery is a profound honor. This space not only showcases my work but provides a haven for the convergence of diverse artistic voices. LuminaLoom's commitment to fostering creativity and dialogue within its walls is a testament to the transformative power of art. It's not just a gallery; it's a vibrant tapestry where each artist weaves their narrative into the rich fabric of the collective imagination.                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <img src="../assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Architect</h4>
               </div>
@@ -690,7 +690,7 @@ Being part of LuminaLoom Gallery is a profound honor. This space not only showca
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/aa.jpg" class="img-fluid" alt="">
+              <img src="../assets/img/aa.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Savannah Doe</h4>
@@ -708,7 +708,7 @@ Being part of LuminaLoom Gallery is a profound honor. This space not only showca
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/is.jpg" class="img-fluid" alt="">
+              <img src="../assets/img/is.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Sarah Jhonson</h4>
@@ -726,7 +726,7 @@ Being part of LuminaLoom Gallery is a profound honor. This space not only showca
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/kim.jpg" class="img-fluid" alt="">
+              <img src="../assets/img/kim.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Kim Jung Li</h4>
