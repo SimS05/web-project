@@ -208,7 +208,7 @@ label{
     position:absolute;
     right: 0;
     width: 259px;
-    margin-top: 42px;
+    margin-top: 50px;
     height: 300px;
 }
 
@@ -295,7 +295,7 @@ label{
             <input type="radio" name="sex" id="other" value="o">
             <label for="other" id="black-label">Other</label><br><br><br>
             <label for="d" id="black-label" style="font-size: 22px;"><strong>Date of birth</strong></label><br>
-            <input type="date" id="dob" name="dob" style="background-color: #cda45e;"><br><br><br>
+            <input type="date" id="dob" name="dob" style="background-color: #cda45e;"><br><br><br><br>
             
             <label for="artisticStyle" id="black-label" style="font-size: 22px;"><strong>Artistic Style</strong></label><br>
             <select id="artisticStyle" name="artisticStyle" style="background-color: #cda45e;">
@@ -336,10 +336,10 @@ label{
                 <option value="beginner">Beginner</option>
                 <option value="intermediate">Intermediate</option>
                 <option value="advanced">Advanced</option>
-            </select><br><br><br><br><br>
+            </select><br><br><br><br><br><br>
 
 
-            <div style="position: absolute; bottom:0; margin-bottom: 60px;"><strong>Explore the gallery or actively collaborate?</strong></div>
+            <div style="position: absolute; bottom:0; margin-bottom: 95px;"><strong>Explore the gallery or actively collaborate?</strong></div>
             <input type="checkbox" name="choice" id="viewGalleryRadio"> 
             <label for="viewGalleryRadio" id="black-label">View Gallery</label>
 
@@ -350,7 +350,7 @@ label{
         </div>
 
         <div class="signUp-div">
-            <input type="submit" class="signUp" name="signup" value="signup">
+            <input type="submit" class="signUp" name="signup" value="Sign Up">
             <input type="button" class="clear" name="clear" value="Clear" onclick="ClearForm()">                      
         </div> 
         

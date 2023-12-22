@@ -57,7 +57,7 @@
     .login{
         width: 170px;
         height: 37px;
-        font-size: 21px;
+        font-size: 20px;
         border-radius: 1px;
         position: absolute;
         font-family: "Times New Roman", serif;
@@ -134,14 +134,14 @@
             <div class="inp2">
             <form action="../BE/signup-login-contr.php" method="POST" name="login">
                 <label for="email">Email </label><br>
-                <input type="email" id="un-email" name="email" class="input" required>
+                <input type="email" id="un-email" name="email" class="custom-input" required>
                 <br><br><br>
                 <label for="pass">Password</label><br>
                 <input type="password" id="pass" name="pass" class="custom-input" required>
                 <div class="forgot-pass"><a href=""><br>Forgot Password</a></div>
             
             </div>
-            <div class="login-div"><input type="submit" class="login" name="login" value="login"></div>
+            <div class="login-div"><input type="submit" class="login" name="login" value="Login"></div>
             </form>
         </div>
     
