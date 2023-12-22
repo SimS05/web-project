@@ -66,6 +66,38 @@ function dislikePost(postId2) {
         <i class="fa-regular fa-thumbs-down fa-xl" style="color:red" onclick="dislikePost(<?php echo $post->post_id; ?>)"><text style="font-weight:900;font-size:20px;margin-left:4px;margin-right:20px"><?php echo $post->dislikes?></text></i>
         <div class="comments" style="display:flex;margin-bottom:15px;height:10%;margin-top:15px">
         <label for="comments" style="padding-bottom:4px; font-family:'Poppins', sans-serif;font-size:20px;margin-right:10px;">Comments:</label>
+       
+        <!-- comment system goes here -->
+
+        <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+           
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      nice
+                    </p>
+                <!-- <img src="assets/img/riiiii.jpeg" class="testimonial-img" alt=""> -->
+                <h3>Saul Goodman</h3>
+                <!-- <h4>Ceo &amp; Founder</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+
+         
+        </div>
+      </div>
+    </section>
+
+
+
+
+        
         <!-- comment system goes here -->
         </div>
 

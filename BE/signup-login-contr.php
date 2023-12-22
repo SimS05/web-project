@@ -22,18 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         session_start();
         $_SESSION["username"]=$user->username;
         $_SESSION["email"]=$user->email;
-        echo '<script language="javascript">';
-        echo 'alert("Login Successful!");';
-        echo 'window.location.href ="../pages/template-index.php";';
-        echo '</script>';
+        echo "<script>alert('Login successful!');window.location.href ='../pages/template-index.php';</script>";
         exit;
        }
        else{
-        echo '<script>alert("Login Unsuccessful!");</script>';
-        echo '<script language="javascript">';
-        echo 'alert("Login Unsuccessful!");';
-        echo 'window.location.href ="../index.php";';
-        echo '</script>';
+        echo "<script>alert('Login Unsuccessful!');window.location.href ='../pages/login.php';</script>";
         exit;
        }
     }
@@ -47,18 +40,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             session_start();
             $_SESSION["username"]=getUsername($user);
             $_SESSION["email"]=$user->email;
-             echo '<script language="javascript">';
-             echo 'alert("Login Successful!");';
-            echo 'window.location.href ="../pages/template-index.php";';
-            echo '</script>';
-        exit;
+            echo "<script>alert('Login successful!');window.location.href ='../pages/template-index.php';</script>";
+            exit;
+        
         }
         else{
-            echo '<script>alert("Login Unsuccessful!");</script>';
-            echo '<script language="javascript">';
-            echo 'alert("Login Unsuccessful!");';
-            echo 'window.location.href ="../pages/another_page.php";';
-            echo '</script>';
+            echo "<script>alert('Login Unsuccessful!');window.location.href ='../pages/login.php';</script>";
             exit;
            }
 }
@@ -67,13 +54,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function signUp($user){
     $date=date('Y-m-d');
     if(!checkEmail($user->email)){
-        header("location:../index.php?eerr=Email Already In Use");
+        echo "<script>alert('Email Already In Use!');window.location.href ='../index.php';</script>";
     }
     if($user->pass!==$user->cpass){
-        header("location:../index.php?perr={Passwords dont match} & cperr={Passwords dont match}");
+        echo "<script>alert('Passwords dont match!');window.location.href ='../index.php';</script>";
     }
     if($user->dob>=$date){
-        header("location:../index.php?derr={Invalid Date}");
+        echo "<script>alert('Invalid Date!');window.location.href ='../index.php';</script>";
     }
 
     if(addUser($user)){
@@ -89,7 +76,7 @@ function login($user){
        return true;
         }
         else{
-            header("location:../pages/another_page.php?uerr=Account Does Not Exist");
+            echo "<script>alert('Account Does Not Exist!');window.location.href ='../pages/login.php';</script>";
            }       
 }
 
