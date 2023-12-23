@@ -116,7 +116,7 @@ session_start();
           </div>
         </div>
         <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+          <a href="https://www.youtube.com/watch?v=zqokEM5-C14" class="glightbox play-btn"></a>
         </div>
 
       </div>
